@@ -46,16 +46,18 @@ function App() {
         <h1>Re: Mind</h1>
       </header>
 
-      <select onChange={handleChange} name="" id="">
-        <option value="">Choose Philosopher</option>
-        <option value="Aristotle">Aristotle</option>
-        <option value="Confucius">Confucius</option>
-        <option value="Epictetus">Epictetus</option>
-        <option value="Marcus Aurelius">Marcus Aurelius</option>
-        <option value="Seneca the Younger">Seneca the Younger</option>
-      </select>
+      <div className='flexContainer'>
+        <select onChange={handleChange} name="" id="">
+          <option value="">Choose Philosopher</option>
+          <option value="Aristotle">Aristotle</option>
+          <option value="Confucius">Confucius</option>
+          <option value="Epictetus">Epictetus</option>
+          <option value="Marcus Aurelius">Marcus Aurelius</option>
+          <option value="Seneca the Younger">Seneca the Younger</option>
+        </select>
 
-      <button onClick={handleClick}>Get Another Quote</button>
+        <button onClick={handleClick}>Get Another Quote</button>
+      </div>
 
       <QuoteGallery loading={loading} quote={quote} author={author} />
 
