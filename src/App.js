@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Re:Mind</h1>
+        <h1>Re: Mind</h1>
       </header>
 
       <select onChange={handleChange} name="" id="">
@@ -55,9 +55,11 @@ function App() {
         <option value="Seneca the Younger">Seneca the Younger</option>
       </select>
 
+      <button onClick={handleClick}>Get Another Quote</button>
+
       <QuoteGallery loading={loading} quote={quote} author={author} />
 
-      <button onClick={handleClick}>Get Another Quote</button>
+      
 
 
     </div>

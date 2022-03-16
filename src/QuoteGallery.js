@@ -5,7 +5,7 @@ function QuoteGallery({ loading, quote, author }) {
       {loading ? (
         <h2>Searching for knowledge...</h2>
       ) : (
-        <section>
+        <section className="quoteSection">
           <h2>{quote}</h2>
           <h3>{author}</h3>
         </section>
