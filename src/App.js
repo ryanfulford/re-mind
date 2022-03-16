@@ -36,7 +36,6 @@ function App() {
   }
 
   const handleClick = () => {
-    // console.log(event.target.value);
     getQuote(philosopher);
   }
 
@@ -60,10 +59,6 @@ function App() {
       </div>
 
       <QuoteGallery loading={loading} quote={quote} author={author} />
-
-      
-
-
     </div>
   );
 }
