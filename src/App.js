@@ -41,6 +41,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="wrapper">
       <header>
         <h1>Re: Mind</h1>
       </header>
@@ -59,6 +60,7 @@ function App() {
       </div>
 
       <QuoteGallery loading={loading} quote={quote} author={author} />
+      </div>
     </div>
   );
 }
